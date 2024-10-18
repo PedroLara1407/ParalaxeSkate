@@ -1,0 +1,188 @@
+*{
+    padding: 0%; 
+    margin: 0%; 
+    box-sizing: border-box;
+} 
+
+/* Tema do Site; Esporte a minha escolha */
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.5;
+} 
+
+.header{
+    /* background-color: #8162ee;  */ 
+    background-image: url(https://media.istockphoto.com/id/149153272/pt/foto/pargue-detalhe-de-lennon-parede.jpg?s=1024x1024&w=is&k=20&c=E6ZXSgJneYkjc8QgYSZ2NzCLMNqPttMNHiJXDnTeLQc=);  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 50px 0;  
+} 
+
+
+.header h1{
+    font-size: 6em; 
+    background-color: #000000af;  
+    border-radius: 40px;
+    justify-content: center;  
+    margin-left: 15%; 
+    margin-right: 15%;
+} 
+
+.header p{
+    font-size: 1.5em; 
+    background-color: #000000af;  
+    border-radius: 40px;
+    justify-content: center; 
+    margin-left: 30%; 
+    margin-right: 30%;
+}  
+
+.content1{ 
+    background-image: url(https://images.pexels.com/photos/3269267/pexels-photo-3269267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+    background-size: cover; 
+
+} 
+
+.content2{
+    background-image: url(https://images.pexels.com/photos/11902270/pexels-photo-11902270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+} 
+
+.content3{
+    background-image: url(https://images.pexels.com/photos/6502327/pexels-photo-6502327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+    background-size: cover;
+}
+
+.container{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 20px;
+} 
+
+.box{
+    padding: 20px; 
+    width: 60%; 
+    /* usar isso para alterar a largura dos elementos, mais facil que margem  */ 
+    margin: 10px;  
+    text-align: justify; 
+    line-height: 30px;
+}  
+
+.box1{
+    background-color: #74f3fcce; 
+    border-radius: 40px; 
+    margin-top: 35px; 
+    margin-bottom: 35px;
+} 
+
+.box2{ 
+    background-color: #85c1f1ce; 
+    border-radius: 40px; 
+    margin-top: 35px; 
+    margin-bottom: 35px;
+}
+
+.box3{ 
+    background-color: #74f3fcd7; 
+    border-radius: 40px;  
+    margin-top: 35px; 
+    margin-bottom: 25px;
+}
+
+.box h2{
+    font-size: 2em; 
+    margin-bottom: 15px; 
+    color: #ffffff; 
+    text-shadow: -1px 1px 5px black;
+} 
+
+/* Coisa que ainda vamosa preender sobre sub-classes */
+.box p::selection{
+background-color: #5060f3; 
+color: #5fddee;
+} 
+
+.box h2::selection{
+    background-color: #5060f3; 
+    color: #5fddee; 
+    }
+/* Coisa que ainda vamosa preender sobre sub-classes */
+
+.box p{ 
+    font-size: 1.5em;
+    margin-top: 15px; 
+    color: #ffffff;
+    text-shadow: -1px 1px 5px #000000;
+} 
+
+hr{
+    background-color: #ffffff; 
+    height: 3px; 
+    border-style: none; 
+    box-shadow: -1px 1px 5px #000000;
+}
+
+.footer{
+    background-color: #1e407288; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 15px 0; 
+    margin-top: 35px; 
+}  
+
+a{
+    color: #f3de20; 
+    text-decoration: none;
+}
+
+
+
+.parallax1{ 
+    background-image: url(https://images.unsplash.com/photo-1508966198207-f708414cc111?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    border: solid; 
+    border-color: #1e3b72;  
+} 
+
+.parallax2{
+    background-image: url(https://images.pexels.com/photos/7936344/pexels-photo-7936344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+    border: solid; 
+    border-color: #e0e1e4; 
+} 
+
+.parallax3{
+    background-image: url(https://images.pexels.com/photos/12539530/pexels-photo-12539530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+    border: solid; 
+    border-color: #4dbeeb; 
+}  
+
+.parallax{ 
+    height: 65vh; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;  
+} 
+
+@media (max-width:768px){  
+    .header{
+        background-size: 100vh;
+    }
+    .header h1{
+        font-size: 3em;
+    } 
+
+    .header p{
+        margin-left: 25px; 
+        margin-right: 25px;
+    } 
+
+    .box{
+        width: 90%; 
+        margin: 5px; 
+        text-align: left;
+    }
+}
